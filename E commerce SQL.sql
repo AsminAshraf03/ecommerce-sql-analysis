@@ -19,11 +19,13 @@ from dbo.ecommerce;
 	 from dbo.ecommerce
 	 GROUP BY product_category_name
 	 ORDER BY Total_Sales DESC;
+
 	 --QUESTION 5
      select top 1 payment_type,COUNT(*) AS Total_Transactions
 	 from dbo.ecommerce
 	 GROUP BY payment_type
 	 ORDER BY Total_Transactions DESC;
+
 	 --QUESTION 6
       select top 1 customer_state,COUNT(DISTINCT order_id) AS Total_Orders
 	  from dbo.ecommerce
